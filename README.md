@@ -1,5 +1,5 @@
 # 2022-MN-map-quilt-gon-wild <!-- omit in toc -->
-A fun side project for 2022 NACIS
+A fun side project for 2022 [NACIS](https://nacis.org/)
 
 This repo was utilized to document the process of creating a static map quadrant or 'quilt square' for the NACIS 2022 Minneapolis Minnesota Mapping quilt revealed at the Annual NACIS 2022 Conference in (you guessed it) Minneapolis Minnesota.
 
@@ -46,31 +46,31 @@ So I considered **Symbology/Patterns** for this area:
 - Upper hierarchy roads would have patterns (later abandoned this idea, reference jupyter notebook for details, but it all boiled down to preferring tracks for all roads over my ability to produce animal patterns in roads). 
 - Lower would have animal tracks  
     - During my internet search for how digital cartographers incorporated tracks into their maps I stumbled across Alina Gerlee's page.  
-    - [Alina Gerlee Track SVG (point or line)](https://alinagerlee-pl.translate.goog/tropy-slady-qgis/?_x_tr_sl=pl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc) Alina's webpage was written in Polish so her page does need to be translated if Polish is not a familiar language. When translated she says: "*I didn't write for a long time, but at that time I prepared a style package for naturalists - animal tracks and tracks (for point and line layers). To be installed and used by the **QGIS Resource Sharing plugin**. Take it and use it!*"  
+    - [Alina Gerlee Track SVG (point or line)](https://alinagerlee-pl.translate.goog/tropy-slady-qgis/?_x_tr_sl=pl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc) Alina's webpage was written in Polish so her page does need to be translated if Polish is not a familiar language for you. When translated by google she said: "*I didn't write for a long time, but at that time I prepared a style package for naturalists - animal tracks and tracks (for point and line layers). To be installed and used by the **QGIS Resource Sharing plugin**. Take it and use it!*"  
 
     - Alina's symbols
     <img src = ./images/alina_gerlee_symbols.png width = "600" height = "300">
     
-    - Alina's page contains the steps for accessing the **QGIS Resource Sharing Plugin** which is how I accessed her SVGs she prepared. Reference this [Youtube Video by burdGIS](https://www.youtube.com/watch?v=kAf0Bxs1Ljc&list=PLiITJ9X8KPoizHXQbwAW5elJLBKCY2yQI&index=1) for video demo of how to incorporate new opensource SVGs to QGIS symbology.
+    - Alina's page contained the steps for accessing the **QGIS Resource Sharing Plugin** which is how I accessed her SVGs she prepared. Referenced this [Youtube Video by burdGIS](https://www.youtube.com/watch?v=kAf0Bxs1Ljc&list=PLiITJ9X8KPoizHXQbwAW5elJLBKCY2yQI&index=1) for video demo of how to incorporate new opensource SVGs to QGIS symbology.
         
     - The QGIS Resource Sharing Plugin allows access to an assortment of shared SVGs and other resources. The plugin was originally developed as part of GSoC 2016 project (Google Summer of Code) by Akbar Gumbira, Håvard Tveite, and Julien Moura. The plugin allows users to search for available collections and install them. Users can also create repos to put in the collection or contribute to the resource sharing their own collection of SVGs.
-    - Animal tracks and silhouettes used were selected after taking a deep dive into the Bell Museum, Animals present at Como Park Zoo & Conservatory and [Iconic Animals of MN](https://www.mprnews.org/story/2019/07/26/a-field-guide-to-minnesotas-iconic-animals) (MPR news, Daniel Ackerman).    
+    - Animal tracks and silhouettes used were selected after taking a deep dive into animals represented at the Bell Museum, animals present at Como Park Zoo & Conservatory and [Iconic Animals of MN](https://www.mprnews.org/story/2019/07/26/a-field-guide-to-minnesotas-iconic-animals) (MPR news, Daniel Ackerman).    
    
 **Plantlife**
 - Place vegetation throughout as buildings?
 - The road tracks and animal patterns would then look like they are hiding/camoflaged among the plant life...
 
 ## Data and Symbology
-- Use QGIS OSM plugin ([QuickOSM](https://plugins.qgis.org/plugins/QuickOSM/)) to pull roads, buildings, amenities. This data was used to create the basemap for the project. 
-- Use [Inkscape](#https://inkscape.org/about/) to supplement animal silhouettes or tracks not found in Alina's SVGs
-    - Use Alina's Moose (Body and Tracks), Otter (Tracks for Beaver 😊), Wolf (Body & Tracks), Bear (Body & Tracks) and Lynx (Tracks).
-    - I created Beaver (Body), Loon (Body & Tracks), and Lynx (Body) in Inkscape. (Initial images from [Pixabay](#https://pixabay.com/) for where one can pull free and open use images/SVGs for baseline SVG, then modified the base image to fit my needs)
-- Decided on color palette using Coolors and selected an earthtone colors scheme that appears different enough between all colors so that all can be deciphered between for varying vision abilitites. [Ramsey Coolors Color Palettes](https://coolors.co/u/rebecca_ramsey1)  
+- Used QGIS OSM plugin ([QuickOSM](https://plugins.qgis.org/plugins/QuickOSM/)) to pull roads, buildings, amenities. This data was used to create the basemap for the project. 
+- Used [Inkscape](#https://inkscape.org/about/) to supplement animal silhouettes or tracks not found in Alina's SVGs
+    - Utilized Alina's Moose (Body and Tracks), Otter (Tracks for Beaver 😊), Wolf (Body & Tracks), Bear (Body & Tracks) and Lynx (Tracks).
+    - I created Beaver (Body), Loon (Body & Tracks), and Lynx (Body) in Inkscape. (Initial images from [Pixabay](#https://pixabay.com/) for pulling free and open use images/SVGs for baseline, then modified the base image to fit my needs)
+- Decided on color palette using Coolors and selected an earthtone colors scheme that appeared different enough between all colors that all could be deciphered between for varying vision abilitites. [Ramsey Coolors Color Palettes](https://coolors.co/u/rebecca_ramsey1)  
 
     <img src = ./images/coolors_palette.png width = "600" height = "200">
 
 ## Assign Rules
-With my animal tracks created or accessible and animal silhouttes ready to wander around my map I set some ground rules for where and how to assign these symbols.
+With my animal tracks created or accessible and animal silhouttes ready to wander around my map I set ground rules for where and how to assign these symbols.
 
 - Roads (Tracks)
     - Lynx Tracks = Motorway  
@@ -80,9 +80,9 @@ With my animal tracks created or accessible and animal silhouttes ready to wande
     - Bear Tracks = Path  
     - Beaver Tracks = Service  
 - Buildings
-    - Use tree SVG standard with QGIS 3.16. (*C:/PROGRA~1/QGIS 3.16/apps/qgis-ltr/svg/gpsicons/tree.svg*)
-    - Only symbolize buildings > 3000 meters squared (quadrant quickly covered up if all buildings represented)
-    - Call out Bell Museum and Conservatory with darker green (#1D3527) and larger symbol. (This quadrant is inspired by them 😊 after all)  
+    - Used tree SVG standard with QGIS 3.16. (*C:/PROGRA~1/QGIS 3.16/apps/qgis-ltr/svg/gpsicons/tree.svg*)
+    - Only symbolized buildings > 3000 meters squared (otherwise the quadrant quickly covered up basemap if all buildings were represented)
+    - Called out Bell Museum and Conservatory with a darker green (#1D3527) and larger symbol. (This quadrant was inspired by them 😊 after all)  
 - Amenities
     - Moose = Bicycle Rental Location  
     - Beaver = Bicycle Repair Station  
@@ -91,10 +91,10 @@ With my animal tracks created or accessible and animal silhouttes ready to wande
     - Bear = Veterinary  
     - Wolf = Public bookcase  
 
-    I knew from go I wanted to add animals into the picture since that is the entire theme of this quadrant. I also wanted to be intentional with regards to what the animals represented. If Minneapolis were to really Go Wild, I would want the animals to represent EcoFriendly Amenities they would approve of or perhaps be partial to. Then after a few samplings of determining how many points would qualify under this I looked at the surroundings for the animal.
+    I knew from go I wanted to add animals into the picture since that is the entire theme of this quadrant. I also wanted to be intentional with regards to what the animals represented. If Minneapolis were to really *Go Wild*, I would want the animals to represent EcoFriendly Amenities they would approve of or perhaps be partial to. 
 
 ## Ramsey Final Product
-With all rules in place and data reduced to a reasonable visual representation (no not every amenity or building or road was represented see Jupyter Notebook for details) a final pdf was produced. And then David worked his magic to stitch it together with the other maps (the true masterpiece).
+With all rules in place and data reduced to a reasonable visual representation (no not every amenity or building or road was represented see Jupyter Notebook for details of reduction) a final pdf was produced. David then worked his magic to stitch it together with the other maps producing the true masterpiece.
 
 <img src = ./images/map_quilt_print_tile.png>
 *Ramsey Quadrant of Minneapolis Minnesota*
