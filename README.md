@@ -58,13 +58,13 @@ So I considered **Symbology/Patterns** for this area:
    
 **Plantlife**
 - Place vegetation throughout as buildings?
-- The road tracks and animal patterns would then look like they are hiding/camoflaged among the plant life...
+- The road tracks and animal patterns would then look like they are hiding/camouflaged among the plant life...
 
 ## Data and Symbology
 - Used QGIS OSM plugin ([QuickOSM](https://plugins.qgis.org/plugins/QuickOSM/)) to pull roads, buildings, amenities. This data was used to create the basemap for the project. 
 - Used [Inkscape](#https://inkscape.org/about/) to supplement animal silhouettes or tracks not found in Alina's SVGs
     - Utilized Alina's Moose (Body and Tracks), Otter (Tracks for Beaver 😊), Wolf (Body & Tracks), Bear (Body & Tracks) and Lynx (Tracks).
-    - I created Beaver (Body), Loon (Body & Tracks), and Lynx (Body) in Inkscape. (Initial images from [Pixabay](#https://pixabay.com/) for pulling free and open use images/SVGs for baseline, then modified the base image to fit my needs)
+    - I created Beaver (Body), Loon (Body & Tracks), and Lynx (Body) in Inkscape. (Initial images from [Pixabay](https://pixabay.com/) for pulling free and open use images/SVGs for baseline, then modified the base image to fit my needs)
 - Decided on color palette using Coolors and selected an earthtone colors scheme that appeared different enough between all colors that all could be deciphered between for varying vision abilitites. [Ramsey Coolors Color Palettes](https://coolors.co/u/rebecca_ramsey1)  
 
     <img src = ./images/coolors_palette.png width = "600" height = "200">
