@@ -3,7 +3,7 @@ A fun side project for 2022 NACIS
 
 This repo was utilized to document the process of creating a static map quadrant or 'quilt square' for the NACIS 2022 Minneapolis Minnesota Mapping quilt revealed at the Annual NACIS 2022 Conference in (you guessed it) Minneapolis Minnesota.
 
-It has become a NACIS tradition to showcase an annual Map Quilt at the meeting. A handful of cartographers each volunteer to work on a small portion of a larger map that focuses on the host city for the meeting. The only information provided is the Deliverable Prerequisites and their assigned quadrant. Mappers have no idea what any other mappers are working on for their particular quadrant. All styles are unique to each map designer/cartographer.   
+It has become a NACIS tradition to showcase an annual Map Quilt at the meeting. A handful of cartographers each volunteer to work on a small portion of a larger map that focuses on the host city for the meeting. The only information provided is the Deliverable Prerequisites and an assigned quadrant. Mappers have no idea what any other mappers are working on for their particular quadrant. All styles are unique to each map designer/cartographer.   
 
 David Lambert, NACIS member has spear headed this project for the last 8-9 years. He is the one who stitches all of the quilt tiles back together. This year I was lucky enough to be a participant in this fantastic tradition for the **10th Anniversary of the Carto Quilt** and this repo will serve as the home for my individual tile/quadrant. Below is a brief overview of my creative process, for more details please reference the Jupyter Notebook within this repo.  
 
