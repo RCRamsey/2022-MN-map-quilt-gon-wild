@@ -96,9 +96,9 @@ With my animal tracks created or accessible and animal silhouttes ready to wande
 ## Ramsey Final Product
 With all rules in place and data reduced to a reasonable visual representation (no not every amenity or building or road was represented see Jupyter Notebook for details of reduction) a final pdf was produced. David then worked his magic to stitch it together with the other maps producing the true masterpiece.
 
-<img src = ./images/map_quilt_print_tile.png>
-*Ramsey Quadrant of Minneapolis Minnesota*
+![Ramsey completed map quilt tile](images/map_quilt_print_tile.png)
+**Figure** Ramsey Quadrant of Minneapolis Minnesota.
 
 ## NACIS 2022 Final Quilt
 Mad props to all those who contributed to this project and whose work is shown below including: David Lambert, Mike Foster, Nat Case, Brian Davidson, Christina Shintani, Ross Thorn, Neil Allen & Taylor Monroe, Nick Lally, Sarah Bell, and Adam Cox.
-<img src = ./images/2022_NACIS_MN_Carto_Quilt_Stitched.png>
+![Final NACIS Map Quilt](images/2022_NACIS_MN_Carto_Quilt_Stitched.png) **Figure** Final NACIS Map Quilt from all contributors.
