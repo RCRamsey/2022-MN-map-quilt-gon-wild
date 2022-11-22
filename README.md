@@ -5,15 +5,15 @@ This repo was utilized to document the process of creating a static map quadrant
 
 It has become a NACIS tradition to showcase an annual Map Quilt at the meeting. A handful of cartographers each volunteer to work on a small portion of a larger map that focuses on the host city for the meeting. The only information provided is the Deliverable Prerequisites and an assigned quadrant. Mappers have no idea what any other mappers are working on for their particular quadrant. All styles are unique to each map designer/cartographer.   
 
-David Lambert, NACIS member has spear headed this project for the last 8-9 years. He is the one who stitches all of the quilt tiles back together. This year I was lucky enough to be a participant in this fantastic tradition for the **10th Anniversary of the Carto Quilt** and this repo will serve as the home for my individual tile/quadrant. Below is a brief overview of my creative process, for more details please reference the Jupyter Notebook within this repo.  
+NACIS member David Lambert, has spear headed this project for the last 9 years. He is the Quiltmaster who stitches all of the quilt tiles back together. This year I was lucky enough to be a participant in this fantastic tradition for the **10th Anniversary of the Carto Quilt** and this repo will serve as the home for my individual tile/quadrant. Below is a brief overview of my creative process, for more details please reference the Jupyter Notebook within this repo.  
 
 
 ## TOC <!-- omit in toc -->
-- [Deliverable Prerequisites](Deliverable-Prerequisites)  
+- [Deliverable Prerequisites](#Deliverable-Prerequisites)  
 - [Initial Inspiration](#Initial-Inspiration)
-- [Data & Symbology](#Data-&-Symbology)
+- [Data and Symbology](#Data-and-Symbology)
 - [Assign Rules](#Assign-Rules)
-- [Final Product](#Final-Product)
+- [Ramsey Final Product](#Ramsey-Final-Product)
 - [NACIS 2022 Final Quilt](#NACIS-2022-Final-Quilt)
 
 ## Deliverable Prerequisites
@@ -21,7 +21,6 @@ David Lambert, NACIS member has spear headed this project for the last 8-9 years
  
 **Size of tile**: 12  x 17"  
 **Scale of map**: 1:15,000  
-**Deadline**: Monday, Oct 3rd  
 
 *300 DPI image in a format supported by Adobe Illustrator, either clipped to your extent or georeferenced, and properly sized, scaled and projected.*  
 
@@ -38,7 +37,7 @@ The Museum and Conservatory are built around displaying and educating Minneapoli
 - *I couldn't leave out silhouettes of animals and vegetation. Animals need somewhere to live*   
 - *If the animals had a choice in symbolizing something on the map, what would they choose? Eco-friendly items?*   
 
-All in all it became a cohesive narrative:  
+All in all, I had a cohesive concept:  
 **A flip of the narrative returning Minneapolis back to a wildlife centric space.**  
 
 So I considered **Symbology/Patterns** for this area:
@@ -55,18 +54,18 @@ So I considered **Symbology/Patterns** for this area:
     - Alina's page contains the steps for accessing the **QGIS Resource Sharing Plugin** which is how I accessed her SVGs she prepared. Reference this [Youtube Video by burdGIS](https://www.youtube.com/watch?v=kAf0Bxs1Ljc&list=PLiITJ9X8KPoizHXQbwAW5elJLBKCY2yQI&index=1) for video demo of how to incorporate new opensource SVGs to QGIS symbology.
         
     - The QGIS Resource Sharing Plugin allows access to an assortment of shared SVGs and other resources. The plugin was originally developed as part of GSoC 2016 project (Google Summer of Code) by Akbar Gumbira, Håvard Tveite, and Julien Moura. The plugin allows users to search for available collections and install them. Users can also create repos to put in the collection or contribute to the resource sharing their own collection of SVGs.
-    - Animal tracks and silhouettes used were selected after taking a deep dive into the Bell Museum, Animals present at Como Park Zoo & Conservatory and [Iconic Animals of MN](https://www.mprnews.org/story/2019/07/26/a-field-guide-to-minnesotas-iconic-animals).    
+    - Animal tracks and silhouettes used were selected after taking a deep dive into the Bell Museum, Animals present at Como Park Zoo & Conservatory and [Iconic Animals of MN](https://www.mprnews.org/story/2019/07/26/a-field-guide-to-minnesotas-iconic-animals) (MPR news, Daniel Ackerman).    
    
-**Interesting plantlife**
+**Plantlife**
 - Place vegetation throughout as buildings?
 - The road tracks and animal patterns would then look like they are hiding/camoflaged among the plant life...
 
-## Data & Symbology
+## Data and Symbology
 - Use QGIS OSM plugin ([QuickOSM](https://plugins.qgis.org/plugins/QuickOSM/)) to pull roads, buildings, amenities. This data was used to create the basemap for the project. 
 - Use [Inkscape](#https://inkscape.org/about/) to supplement animal silhouettes or tracks not found in Alina's SVGs
-    - Use Alina's Moose (Body and Tracks), Otter (Tracks for Beaver 😊) Wolf (Body & Tracks), Bear (Body & Tracks) and Lynx (Tracks).
-    - Create Beaver (Body), Loon (Body & Tracks), and Lynx (Body) in Inkscape. (Initial images from [Pixabay](#https://pixabay.com/) for where one can pull free and open use images/SVGs for baseline SVG.)
-- Decide on color palette using Coolors and select a earthtone colors scheme that appears different enough between all colors so that all can be deciphered between for varying vision abilitites. [Ramsey Coolors Color Palettes](https://coolors.co/u/rebecca_ramsey1)  
+    - Use Alina's Moose (Body and Tracks), Otter (Tracks for Beaver 😊), Wolf (Body & Tracks), Bear (Body & Tracks) and Lynx (Tracks).
+    - I created Beaver (Body), Loon (Body & Tracks), and Lynx (Body) in Inkscape. (Initial images from [Pixabay](#https://pixabay.com/) for where one can pull free and open use images/SVGs for baseline SVG, then modified the base image to fit my needs)
+- Decided on color palette using Coolors and selected an earthtone colors scheme that appears different enough between all colors so that all can be deciphered between for varying vision abilitites. [Ramsey Coolors Color Palettes](https://coolors.co/u/rebecca_ramsey1)  
 
     <img src = ./images/coolors_palette.png width = "600" height = "200">
 
@@ -83,8 +82,8 @@ With my animal tracks created or accessible and animal silhouttes ready to wande
 - Buildings
     - Use tree SVG standard with QGIS 3.16. (*C:/PROGRA~1/QGIS 3.16/apps/qgis-ltr/svg/gpsicons/tree.svg*)
     - Only symbolize buildings > 3000 meters squared (quadrant quickly covered up if all buildings represented)
-    - Call out Bell Museum and Conservatory with darker green (#1D3527) and larger symbol. (This quadrant is inspired by them 😊)  
-- Amenitys
+    - Call out Bell Museum and Conservatory with darker green (#1D3527) and larger symbol. (This quadrant is inspired by them 😊 after all)  
+- Amenities
     - Moose = Bicycle Rental Location  
     - Beaver = Bicycle Repair Station  
     - Loon = Charging Station  
